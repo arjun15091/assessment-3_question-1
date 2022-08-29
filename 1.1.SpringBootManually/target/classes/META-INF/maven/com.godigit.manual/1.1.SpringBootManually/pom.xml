@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.godigit.manual</groupId>
+  <artifactId>1.1.SpringBootManually</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>Here we are creating a spring boot application manually</description>
+  
+  
+  <!--Since we are doing this application manually so we have to add spring boot starter parent manually to manage the version.
+  It will automatically configure the version of other dependencies.-->
+  <parent>
+  <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.5.6</version>
+  </parent>
+  
+ <!-- We have add dependencies and plugins manually as well-->
+ 
+<dependencies>
+    <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+</dependencies>
+
+
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
